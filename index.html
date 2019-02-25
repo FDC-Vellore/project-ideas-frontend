@@ -3,6 +3,8 @@
 <head>
 	<title>FACEBOOK DEVELOPER CIRCLES VELLORE | PROJECT IDEAS</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 	
 	body {
@@ -10,7 +12,7 @@
 	}
 	.top-nav {
 		padding: 2px;
-		background-color: #ffff;
+		/*background-color: #ffff;*/
 
 	}
 		
@@ -26,11 +28,15 @@
 		margin-top: 0px;
 		padding-top: 0px;
 		transform: translateY(-25%);
+		font-family: 'Roboto', sans-serif;
+
 	}
 	.right {
 		float: right;
 		color: #23599B;
 		font-size: 1.5em;
+		font-family: 'Roboto', sans-serif;
+
 	}
 	.home {
 		display: inline;
@@ -45,8 +51,8 @@
 		padding: 3px;
 	}
 	#img2 {
-		width: 25vw;
-		height: 15vh;
+		width: 20vw;
+		height: auto;
 		display: block;
   		margin-left: auto;
   		margin-right: auto;
@@ -55,23 +61,27 @@
 	.main-img {
 		padding: 30px;
 		background-color: #23599B;
-		height: 35vh;
+		height: 270px;
+
 	}
 	.text {
 		color: #ffff;
 		text-align: center;
 		font-size: 2em;
-		margin-top: 10vh;
+		margin-top: 2vh;
+		font-family: 'Roboto', sans-serif;
 	}
 	.sub-heading{
 		color: #23599B;
 		text-align: center;
 		font-size: 2em;
 		margin-top: 5vh;
+		font-family: 'Roboto', sans-serif;
+
 	}
 	.main {
 		padding: 5vh;
-		margin-top: 5vh;
+		margin-top: 1vh;
 	}
 	.list {
 		width: 30px;
@@ -82,6 +92,8 @@
 	.mid-text {
 		display: inline-block;
 		margin-bottom: 5vh;
+		font-family: 'Roboto', sans-serif;
+
 	}
 	.idea {
 		color: #23599B;
@@ -92,6 +104,22 @@
 		font-size: 1.5em;
 	}
 
+	@media (max-width: 760px) {
+		#img2 {
+			width: 60vw;
+			height: auto;
+		}
+		.head {
+			font-size: 1em;
+			transform: translateY(-30%);
+		}
+		.right {
+			font-size: 1em;
+			transform: translateY(20%);
+		}
+	}
+	
+
 
 	</style>
 </head>
@@ -101,13 +129,16 @@
 		<img id="img1" src="symbol.png">
 			<div class="head">Developer Circles</div>
 		<div class="right">
-			<div class="home"><b>Home</b></div>
-			<div class="submit-idea"><b>Submit Idea</b></div>
+			<!-- <div class="home"><b>Home</b></div> -->
+			<form action="form-submit.html">
+				<div class="submit-idea"><b>Submit Idea</b></div>
+			</form>
 		</div>
 	</div>
 
 	<div class="main-img">
-		<img id="img2" src="main.png">
+		<img id="img2" src="logo.png">
+			
 			<div class="text">Everything Great Begins with an Idea</div>
 	</div>
 
